@@ -1,0 +1,668 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="./app.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Youtube</title>
+</head>
+
+<body>
+    <div id="ui_youtube">
+        <!-- header -->
+        <div class="fixed top-0 left-0 right-0 z-10 bg-white">
+            <div class=" flex pt-2 pb-6 px-6 justify-between items-center gap-[15px]">
+                <div class="flex gap-4">
+                    <button class="w-10 h-10 hover:border hover:rounded-[50%] hover:bg-[#E5E5E5] "><i
+                            class="fa-solid fa-bars text-xl font-light text-center"></i></button>
+                    <div before="VN" class="relative before:absolute before:content-[attr(before)] before:top-[-5px]
+                         before:right-[-15px] before:text-xs before:text-gray-500
+                          flex items-center gap-1 cursor-pointer">
+                        <i class="fa-brands fa-youtube text-[#FF0000] text-3xl"></i>
+                        <a href="#" class="font-bold text-xl">Youtube</a>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="border border-solid border-[#E5E5E5] rounded-3xl overflow-hidden">
+                        <input
+                            class="w-[536px] focus:w-[580px] transition-width duration-300 h-[38px] outline-none pl-4 "
+                            placeholder="Tìm kiếm" type="text" />
+                        <button class="w-16 h-[38px] bg-[#f8f8f8] border-l-[1px] hover:bg-[#F0F0F0] "><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <button class="w-10 h-10 border rounded-[50%] bg-[#f8f8f8] hover:bg-[#D9D9D9]">
+                        <i class="fa-solid fa-microphone"></i>
+                    </button>
+                </div>
+                <div class="flex gap-[15px]">
+                    <button class="w-10 h-10 "><i class="fa-solid fa-video w-full text-xl"></i></button>
+                    <button class="w-10 h-10 "><i class="fa-regular fa-bell w-full text-xl"></i></button>
+                    <a href="#"><img src="img/unnamed.jpg" class="w-9 h-9 rounded-[50%]" alt="" /></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- end header -->
+        <!-- main -->
+        <!-- class="flex gap-5" -->
+        <div>
+            <article class="w-1/5 fixed  top-[70px] left-0 bg-white float-left clear-both h-[660px] overflow-auto">
+                <div class="">
+                    <div class="pl-6 w-[260px]">
+                        <div
+                            class="flex gap-6 items-center cursor-pointer px-2 py-3 rounded-lg bg-[#ededed] hover:bg-[#dfdfdf]">
+                            <i class="fa-solid w-[18px] fa-house text-[16px]"></i>
+                            <a href="#" class="text-[14px] font-bold">Trang chủ</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid w-[18px] fa-bolt text-[16px]"></i>
+                            <a href="#" class="text-[14px] ">Shorts</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-brands w-[18px] fa-youtube text-[16px]"></i>
+                            <a href="#" class="text-[14px] ">Kênh đăng ký</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- user -->
+                    <div class="pl-6 w-[260px]">
+                        <div class="flex gap-2 items-center cursor-pointer p-2 rounded-lg hover:bg-[#dfdfdf]">
+                            <a href="#" class="text-[14px] font-bold">Bạn</a>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-clock-rotate-left text-[16px] w-[18px]"></i>
+                            <a href="#" class="text-[14px] ">Video đã xem</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-bars-staggered w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Danh sách phat</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-regular fa-clock w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Xem sau</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-regular fa-thumbs-up w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Video đã thích</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- end user -->
+                    <!-- kênh đăng kí -->
+                    <div class="pl-6 w-[260px]">
+                        <div class="flex gap-2 items-center ">
+                            <p class="text-[14px] font-bold pb-4">Kênh đăng ký</p>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <img src="img/unnamed.jpg" class="w-[30px] h-[30px] rounded-[50%]" alt="">
+                            <a href="#" class="text-[14px] ">Tuns Nguyen</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <img src="img/unnamed.jpg" class="w-[30px] h-[30px] rounded-[50%]" alt="">
+                            <a href="#" class="text-[14px] ">Tuns Nguyen</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <img src="img/unnamed.jpg" class="w-[30px] h-[30px] rounded-[50%]" alt="">
+                            <a href="#" class="text-[14px] ">Tuns Nguyen</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <img src="img/unnamed.jpg" class="w-[30px] h-[30px] rounded-[50%]" alt="">
+                            <a href="#" class="text-[14px] ">Tuns Nguyen</a>
+                        </div>
+                        <div class="flex gap-6  items-center cursor-pointer p-2 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-angle-down w-[30px] text-center"></i>
+                            <a href="#" class="text-[14px] ">Hiển thị thêm 2 mục</a>
+                        </div>
+
+
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- end kênh đăng kí -->
+                    <!-- khám phá -->
+                    <div class="pl-6 w-[260px]">
+                        <div class="flex gap-2 items-center ">
+                            <p class="text-[14px] font-bold pb-4">Khám phá</p>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-fire w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Thịnh hành</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-music w-[18px] text-[20px] "></i>
+                            <a href="#" class="text-[14px] ">Âm nhạc</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-gamepad w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Trò chơi</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-regular fa-newspaper w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Tin tức</a>
+                        </div>
+                        <div class="flex gap-6  items-center cursor-pointer p-2 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-trophy w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Thể thao</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- end -->
+                    <!-- dịch vụ khác -->
+                    <div class="pl-6 w-[260px]">
+                        <div class="flex gap-2 items-center ">
+                            <p class="text-[16px] font-bold pb-4">Dịch vụ khác của YouTube</p>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-brands fa-youtube  w-[18px] text-[20px] text-[#FF0000]"></i>
+                            <a href="#" class="text-[14px] ">YouTube Premium</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-circle-play w-[18px] text-[20px] text-[#FF0000] "></i>
+                            <a href="#" class="text-[14px] ">YouTube Music</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-brands fa-youtube w-[18px] text-[20px] text-[#FF0000]"></i>
+                            <a href="#" class="text-[14px] ">YouTube Kids</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- end dvkhac -->
+                    <!-- more -->
+                    <div class="pl-6 w-[260px]">
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-gear w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Cài đặt</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-regular fa-flag w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Nhật ký báo cáo</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-regular fa-circle-question w-[18px] text-[20px]"></i>
+                            <a href="#" class="text-[14px] ">Trợ giúp</a>
+                        </div>
+                        <div class="flex gap-6 items-center cursor-pointer p-2 py-3 rounded-lg hover:bg-[#dfdfdf]">
+                            <i class="fa-solid fa-exclamation w-[18px] text-[20px] text-center"></i>
+                            <a href="#" class="text-[14px] ">Phản hồi</a>
+                        </div>
+                    </div>
+                    <div class="w-full h-[1px] border my-3"></div>
+                    <!-- end more -->
+                    <!-- gioi thieu -->
+                    <div class="pl-6">
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Giới thiệu</a>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Báo chí</a>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Bản quyền</a><br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500">Liên hệ với chúng tôi</a><br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Người sáng tạo</a>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Quảng cáo</a><br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500">Nhà phát triển</a>
+
+
+                    </div>
+
+                    <div class="mt-1 pl-6">
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Điều khoản</a>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Quyền riêng tư</a> <br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Chính sách và an toàn</a><br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500">Cách YouTube hoạt động</a><br>
+                        <a href="#" class="font-bold text-[13px] text-gray-500 mr-1">Thử các tính năng mới</a>
+
+
+
+                    </div>
+                    <!-- end gioi thieu -->
+                    <div class="mt-3 mb-4 pl-6">
+                        <p class="text-xs text-gray-500">&copy;2024 Google LLC</p>
+                    </div>
+
+                </div>
+
+            </article>
+            <div class=" w-4/5 pr-6 float-right clear-both">
+                <nav class="sticky top-[70px] z-20 bg-white pb-4">
+                    <ul class="flex items-center gap-2 ">
+                        <li class="px-3 py-1 rounded-[10px] font-medium text-sm bg-black"><a class="text-white"
+                                href="#">Tất cả</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Âm
+                                nhạc</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Danh
+                                sách
+                                kết hợp</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Sách
+                                nói</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Trò
+                                chơi</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Trực
+                                tiếp</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Tin
+                                tức
+                            </a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Đọc
+                                rap</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Hoạt
+                                hoạ</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Mới
+                                tải
+                                lên
+                                gần đây</a></li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Đã
+                                xem</a>
+                        </li>
+                        <li><a href="#"
+                                class="px-3 py-2 text-sm rounded-[10px] font-medium bg-[#ededed] hover:bg-[#dfdfdf]">Đề
+                                xuất
+                                mới</a></li>
+                    </ul>
+                </nav>
+                <div class="relative top-14">
+                    <div class="flex gap-4 my-9">
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720.webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile.jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (1).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (1).jpg" class="w-full object-cover" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (2).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (2).jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 my-9 ">
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720.webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile.jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (1).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (1).jpg" class="w-full object-cover" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (2).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (2).jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 my-9 ">
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720.webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile.jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (1).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (1).jpg" class="w-full object-cover" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (2).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (2).jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 my-9 ">
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720.webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile.jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (1).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (1).jpg" class="w-full object-cover" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (2).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (2).jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 my-9 ">
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720.webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile.jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (1).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (1).jpg" class="w-full object-cover" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group">
+                            <a href="#">
+                                <div class="transition-transform">
+                                    <img src="img/hq720 (2).webp"
+                                        class="rounded-xl  group-hover:rounded-none group-hover:scale-[1.001] object-cover"
+                                        alt="">
+                                </div>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="w-9 rounded-[50%] overflow-hidden">
+                                        <img src="img/channels4_profile (2).jpg" class="w-full" alt="">
+
+                                    </div>
+                                    <div>
+                                        <p><b>Playlist | Chữa lành trái tim đang tổn thương | List nhạc tình yêu chữa
+                                                lành</b></p>
+                                        <a href="#" class="block text-gray-500">Trạm phát nhạc</a>
+                                        <span class="text-gray-500 cursor-pointer">231 N lượt xem</span>
+                                        <span class="text-gray-500 cursor-pointer">13 ngày trước</span>
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- end main -->
+
+
+    </div>
+</body>
+
+</html>
